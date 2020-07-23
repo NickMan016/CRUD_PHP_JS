@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    background: rgb(255, 255, 255);
+}
+
+/* ------------------------------ */
+/* ----------Contenedor---------- */
+/* ------------------------------ */
+
+.contenedor{
+    width: 55%;
+    margin: 80px auto;
+}
+
+.contenedor .toolbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenedor .toolbar .btns-control a{
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    background: none;
+    border: 2px rgb(0, 100, 230) solid;
+    color: rgb(0, 100, 230);
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.contenedor .toolbar .btns-control a:hover{
+    background: rgb(0, 100, 230);
+    color: rgb(255, 255, 255);
+}
+
+.contenedor .toolbar .box-search{
+    position: absolute;
+    width: 250px;
+    right: 0;
+}
+
+.contenedor .toolbar .search{
+    position: relative;
+}
+
+.contenedor .toolbar .search i{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -9px;
+    padding: 0 10px 0 10px;
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    color: rgba(0, 100, 230, 0.8);
+}
+
+.contenedor .toolbar .search input{
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    border-bottom: 2px rgba(0, 100, 230, 0.6) solid;
+    color: rgb(0, 100, 230);
+    transition: all .3s ease;
+    outline: none;
+}
+
+.contenedor .toolbar .search input::placeholder{
+    color: rgba(0, 100, 230, 0.6);
+}
+
+.contenedor .toolbar .search:focus input::placeholder{
+    color: rgb(0, 100, 230);
+}
+
+.contenedor .toolbar .search input:focus{
+    border-bottom: 2px rgb(0, 100, 230) solid;
+}
+
+.response_table.active,
+.response.active{
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.response_table.success,
+.response.success{
+    background: rgb(0, 200, 0);
+}
+
+.response_table.error,
+.response.error{
+    background: rgb(200, 0, 0);
+}
+
+.contenedor table{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.contenedor table thead{
+    background: rgb(0, 100, 230);
+    color: rgb(255, 255, 255);
+}
+
+.contenedor table thead th,
+.contenedor table tbody td{
+    padding: 8px 0;
+}
+
+.contenedor table tbody tr:nth-of-type(even){
+    background: rgba(0, 0, 0, .2);
+}
+
+.contenedor table tbody tr:last-of-type{
+    border-bottom: 3px rgb(0, 100, 230) solid;
+}
+
+.contenedor table tbody tr:hover{
+    background: rgba(0, 0, 0, .27);
+}
+
+.btns-table a,
+.btns-table button{
+    margin: 0 10px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: rgb(0, 100, 230);
+    cursor: pointer;
+}
+
+/* ------------------------------ */
+/* ----------Formulario---------- */
+/* ------------------------------ */
+
+.formulario{
+    width: 55%;
+    margin: 30px auto;
+}
+
+.formulario input[type="text"]{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    border-bottom: 2px rgba(0, 100, 230, 0.6) solid;
+    color: rgb(0, 100, 230);
+    transition: all .3s ease;
+    outline: none;
+}
+
+.formulario input[type="text"]::placeholder{
+    color: rgba(0, 100, 230, 0.6);
+}
+
+.formulario input[type="text"]:focus{
+    border-bottom: 2px rgb(0, 100, 230) solid;
+}
+
+.formulario input[type="text"]:focus::placeholder{
+    color: rgb(0, 100, 230) !important;
+}
+
+.formulario input[type="submit"]{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: none;
+    border: 3px rgb(0, 100, 230) solid;
+    color: rgb(0, 100, 230);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.formulario input[type="submit"]:hover{
+    background: rgb(0, 100, 230);
+    color: rgb(255, 255, 255);
+}
